@@ -1,0 +1,43 @@
+{
+  "name": "rewriter",
+  "version": "1.0.0",
+  "description": "Honest GitHub → Static PWA converter. Classifies, transforms, or refuses with actionable reports.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "rewriter": "./index.mjs"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.mjs",
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "zod": "^3.23.8",
+    "execa": "^9.3.0",
+    "fast-glob": "^3.3.2",
+    "p-limit": "^6.1.0",
+    "unzipper": "^0.12.3",
+    "tar": "^7.4.3",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "ts-morph": "^23.0.0",
+    "fs-extra": "^11.2.0",
+    "globby": "^14.0.2",
+    "semver": "^7.6.3",
+    "yaml": "^2.5.1"
+  },
+  "devDependencies": {},
+  "keywords": ["pwa", "static", "github", "migration", "vite", "next"],
+  "license": "MIT",
+  "files": [
+    "index.mjs",
+    "cli/",
+    "core/",
+    "strategies/",
+    "templates/",
+    "validators/",
+    "constants/"
+  ]
+}
